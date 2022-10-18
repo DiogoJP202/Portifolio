@@ -54,7 +54,7 @@ h1{
 }
 
 .Location{
-    text-align: left;
+    text-align: center;
     background-color: black;
     color: white;
     width: auto;
@@ -75,7 +75,7 @@ div.aboutMe {
     text-align: left;
 }
 .topicos{
-    width: auto;
+    max-width: 300px;
     margin: 20px 0px ;
     text-align: center;
     font-size: 1.5em;
@@ -124,6 +124,16 @@ li{
     color: white;
 }
 
+.projetos{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .HTML_CSS{
     display: flex;
     flex-direction: row;
@@ -152,11 +162,16 @@ li{
 }
 
 h3{
+    max-width: 300px;
+    margin: 30px auto ;
+    text-align: center;
+    font-size: 1.5em;
     background-color: black;
     color: white;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border: 2px solid var(--cor5);
+    padding: 3px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 6px var(--cor6);
 }
 
 h4{
