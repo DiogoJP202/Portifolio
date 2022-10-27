@@ -16,7 +16,10 @@
     --cor8: rgb(72, 14, 126);
 
 }
-
+iframe{
+    display: block;
+    width: 100%;
+}
 html, body{
     height: 100%;
 }
@@ -59,7 +62,6 @@ h1{
     color: white;
     width: auto;
     padding: 10px;
-    margin-bottom: 10px;
 }
 
 h1#welcome{

@@ -14,8 +14,12 @@
         width: 300px;
         height: 100px;
     }
+    canvas{
+        margin-bottom: -5px;
+    }
     #welcome{
         margin: auto;
+        margin-top: 5px;
         max-width: 768px;
     }
     #desc{
