@@ -16,11 +16,7 @@
     --cor8: rgb(72, 14, 126);
 
 }
-iframe{
-    display: block;
-    width: 100%;
-    overflow: hidden;
-}
+
 html, body{
     height: 100%;
 }
@@ -73,7 +69,9 @@ h1#welcome{
     box-shadow: 3px 3px 6px var(--cor5);
     font-size: 1.4em;
 }
-
+canvas{
+    margin-bottom: -5px;
+}
 div.aboutMe {
     text-align: left;
 }
