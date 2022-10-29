@@ -2,36 +2,44 @@
 
 
 @media screen and (min-width: 768px){
+
     .divProfileImg{
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .ProfileImg{
         margin: 10px 50px 20px 0px;
     }
+
     #apresentacao{
         width: 300px;
         height: 100px;
     }
+
     #welcome{
         margin: auto;
         margin-top: 5px;
         max-width: 768px;
     }
+
     #desc{
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
     }
+
     .Skills{
         width: 80%;
         justify-content: space-around;
         margin: auto;
     }
+
     .topicos{
         width: 250px;
     }
+    
     .descricao{
         max-width: 400px;
     }
