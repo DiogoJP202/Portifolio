@@ -209,3 +209,6 @@ a{
 a:hover{
     color: var(--cor2);
 }
+#shelby{
+    width: 20px;
+}

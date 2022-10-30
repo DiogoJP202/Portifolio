@@ -30,4 +30,28 @@ function matrixRain() {
     window.addEventListener('resize',() =>{matrixRain()})
     draw();
 }
+FontRaibow()
 matrixRain();
+
+function FontRaibow(){
+    const fonte = document.querySelector('.fontRaibow');
+
+    let timer = setInterval(() => {
+        setTimeout(()=>{
+            fonte.style.color = `${generateColor()}`;
+        }, 500)
+    },1000)
+    window.requestAnimationFrame(FontRaibow);
+}
+
+function generateColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    
+    return color;
+    
+  }
