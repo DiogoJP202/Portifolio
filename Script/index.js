@@ -1,9 +1,10 @@
 function matrixRain() {
     const c = document.getElementById('matrix');
     const ctx = c.getContext('2d');
-
+    const screen = document.getElementsByTagName('body')[0];
+    
     c.height = 200;
-    c.width = window.innerWidth;
+    c.width = (window.innerWidth - 17);
 
     const letters = ["日","ﾊ","ﾐ","ﾋ","ｰ","ｳ","ｼ","ﾅ","ﾓ","ﾆ","ｻ","ﾜ","ﾂ","ｵ","ﾘ","ｱ","ﾎ","ﾃ","ﾏ","ｹ","ﾒ","ｴ","ｶ","ｷ","ﾑ","ﾕ","ﾗ","ｾ","ﾈ","ｽ","ﾀ","ﾇ","ﾍ",":","・",".","=","*","+","-","<",">","¦","｜","ﾘ"];
     const fontSize = 18;
@@ -26,7 +27,7 @@ function matrixRain() {
         }
         window.requestAnimationFrame(draw);
     }
-    window.addEventListener('resize',(matrixRain))
+    window.addEventListener('resize',() =>{matrixRain()})
     draw();
 }
 matrixRain();
