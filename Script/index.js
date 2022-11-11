@@ -4,7 +4,7 @@ function matrixRain() {
     const screen = document.getElementsByTagName('body')[0];
     
     c.height = 200;
-    c.width = window.innerWidth -21;
+    c.width = window.innerWidth;
 
     const letters = ["日","ﾊ","ﾐ","ﾋ","ｰ","ｳ","ｼ","ﾅ","ﾓ","ﾆ","ｻ","ﾜ","ﾂ","ｵ","ﾘ","ｱ","ﾎ","ﾃ","ﾏ","ｹ","ﾒ","ｴ","ｶ","ｷ","ﾑ","ﾕ","ﾗ","ｾ","ﾈ","ｽ","ﾀ","ﾇ","ﾍ",":","・",".","=","*","+","-","<",">","¦","｜","ﾘ"];
     const fontSize = 18;
