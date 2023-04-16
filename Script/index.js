@@ -30,7 +30,7 @@ function matrixRain() {
     window.addEventListener('resize',(matrixRain))
     draw();
 }
-FontRaibow()
+FontRaibow();
 matrixRain();
 
 function FontRaibow(){
@@ -40,7 +40,7 @@ function FontRaibow(){
         setTimeout(()=>{
             fonte.style.color = `${generateColor()}`;
         }, 500)
-    },1000)
+    }, 1000)
     window.requestAnimationFrame(FontRaibow);
 }
 
