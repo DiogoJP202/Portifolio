@@ -23,6 +23,7 @@ html, body{
 body{
     font-family: 'Courier New', Courier, monospace;
     background-image: var(--cor3);
+    overflow-x: hidden;
 }
 
 header{
