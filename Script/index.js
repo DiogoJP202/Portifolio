@@ -52,6 +52,34 @@ function generateColor() {
       color += letters[Math.floor(Math.random() * 16)];
     }
     
-    return color;
+    return color; 
+}
+
+function hands(){
+    const hands = document.querySelectorAll('.hand');
+    let contador = 0;
+
+    hands[1].style.transform = "scale(-1)";
+    hands[0].style.transform = "scale(-1)";
     
-  }
+    function handLeft(){
+        hands[0].style.transform = "rotate(30deg)";
+        hands[1].style.transform = "rotate(-30deg)";
+    }
+    
+    function handright(){
+        hands[0].style.transform = "rotate(-30deg)";
+        hands[1].style.transform = "rotate(30deg)";
+    }
+
+    setInterval(()=>{
+        if(contador % 2 === 0){
+            handLeft();
+        } else {
+            handright();
+        }
+        contador ++;
+    }, 500)
+}
+
+hands();

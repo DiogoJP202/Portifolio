@@ -21,118 +21,170 @@ html, body{
     height: 100%;
 }
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     background-image: var(--cor3);
+
     overflow-x: hidden;
 }
 
 header{
-    padding-top: 10px;
     background-color: var(--cor5);
     background-image: var(--cor7);
 }
 
 h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5em;
-    margin: 20px;
     text-align: center;
-    background-color: black;
-    color: white;
-    border: 2px dashed white;
-    padding: 3px;
+    color: #FFF;
+
+    background-color: #000;
+}
+
+#apresentacao{
+    margin: auto;
+    width: 400px;
+
+    color: #FFF;
+}
+
+#apresentacao > strong {
+    color: #0F0;
+}
+
+.fontRaibow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1em; 
+    text-align: center;
 }
 
 .ProfileImg{
+    display: block;
     width: 200px;
+    padding: 5px;
+
     margin: auto;
     margin-bottom: 25px;
-    display: block;
-    padding: 5px;
+
     border-radius: 50%;
     box-shadow: 5px 5px 6px var(--cor2);
     background-image: var(--cor3);
 }
 
 .Location{
-    text-align: center;
-    background-color: black;
-    color: white;
     width: auto;
+
     padding: 10px;
+
+    text-align: center;
+    color: #FFF;
+
+    background-color: #000;
 }
 
-h1#welcome{
-    text-align: center;
-    border: 2px solid var(--cor6);
-    color: var(--cor5);
-    text-shadow: 5px 5px 5px var(--cor6);
-    box-shadow: 3px 3px 6px var(--cor5);
-    font-size: 1.4em;
+.linkR > a{
+    color: #0F0;
 }
+
+.linkR > a:hover{
+    transition-duration: 3s;
+    transition: .5s;
+
+    color: #FFF;
+    font-size: 1.3em;
+}
+
+#welcome{
+    font-size: 1.4em;
+    color: #FFF;
+    text-align: center;    
+    text-shadow: 2px 2px 5px #0F0;
+}
+
+.hand{
+    transition-duration: .5s;
+    transition: .5s;
+}
+
 canvas{
     margin-bottom: -5px;
 }
-div.aboutMe {
-    text-align: left;
-}
+
 .topicos{
     max-width: 300px;
-    margin: 20px 0px ;
+
+    margin: 20px 5px;
+    padding: 2px;
+
     text-align: center;
     font-size: 1.5em;
-    background-color: black;
     color: white;
-    border: 2px solid var(--cor5);
-    padding: 3px;
-    border-radius: 40px;
-    box-shadow: 3px 3px 6px var(--cor6);
+
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px var(--cor6);
 }
+
 #sk1, #sk2{
     width: 200px;
 }
+
 .descricao{
-    background-color: var(--cor2);
-    background-image: var(--cor7);
     padding: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
+
+    text-indent: 10px;
     font-size: 1em;
     font-weight: bold;
     font-weight: bold;
-    border: 3px solid black;
-    border-radius: 10px;
     color: white;
-    margin: 5px;
-    margin-bottom: 20px;
+
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: var(--cor6);
+    background-image: var(--cor7);
 }
 
 .Skills{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+ 
+    margin: 5px;
+
     border: 2px solid black;
     border-radius: 10px;
-    margin: 5px;
     background-image: var(--cor7);
 }
 
 ul{
-    margin: 10px;
+    margin: 10px 30px;
 }
 
 li{
     list-style: square;
+
     font-size: 1em;
     font-weight: bold;
     color: white;
 }
 
 .projetos{
-    text-align: center;
-    background-color: black;
-    color: white;
     width: auto;
+
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+
+    text-align: center;
+    color: white;
+
+    background-color: black;
 }
 
 .HTML_CSS{
@@ -199,13 +251,12 @@ footer{
     font-weight: bold;
     color: white;
 }
-.links{
-    margin-bottom: 10px;
-}
+
 a{
     text-decoration: none;
     color: var(--cor8);
 }
+
 a:hover{
     color: var(--cor2);
 }
