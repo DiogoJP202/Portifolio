@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer</title>
+    <style>
+        body{
+            background-color: rgb(255, 228, 194);
+        }
+        
+        #box{
+            width: 400px;
+            height: 400px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border: 1px solid #000;
+        }
+
+        .borderScreen{
+            width: 13.6em;
+            height: 10em;
+
+            border: 1.3em solid #000;
+            border-radius: 10%;
+        }
+
+        .borderLine{
+            width: 15em;
+            height: 11.4em;
+
+            position: absolute;
+            left: 5px;
+            top: 5px;
+
+            border: 0.3em solid #fff;
+            border-radius: 10%;
+        }
+
+        .screen{
+            width: 100%;
+            height: 100%;
+
+            background-color: #0ff;
+        }
+
+        .support{
+            width: 0;
+            height: 0;
+
+            position: absolute;
+            left: 5em;
+            top: 12em;
+
+            z-index: -1;
+
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 40px solid lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="borderScreen">
+            <div class="borderLine"></div>
+            <div class="screen"></div>
+        </div>
+        <div class="support"></div>
+        <div class="supportLine"></div>
+    </div>
+</body>
+</html>
