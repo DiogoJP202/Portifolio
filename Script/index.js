@@ -80,6 +80,24 @@ function hands(){
     }, 500)
 }
 
+function showMore(){
+    let contador = 1;
+
+    document.addEventListener('click', event => {
+        element = event.target;
+
+        if(element.classList.contains('showMore')){
+            const projects = document.querySelectorAll('.Project');
+
+            contador ++;
+            projects[contador].style.display = 'block';
+
+            if(contador > 3) element.style.display = 'none';
+        }
+    })
+}
+
 FontRaibow();
 matrixRain();
 hands();
+showMore()

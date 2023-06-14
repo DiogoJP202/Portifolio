@@ -211,6 +211,169 @@ h3{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.projeto{
+    min-width: 300px;
+    max-width: 350px;
+    width: 380px;
+    height: 380px;
+}
+.computer{
+    min-width: 300px;
+    max-width: 350px;
+    width: auto;
+    height: 350px;
+}
+
+.computer-monitor{
+    margin: 0 auto;
+
+    width: 85.5%;
+    height: 65%;
+
+    background: #333;
+    border: 0.5em solid #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.computer-bottom{
+    margin: 0 auto;
+
+    width: 90%;
+    height: 15%;
+
+    background: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.computer-stand{
+    margin: 0 auto;
+
+    width: 25%;
+    height: 14%;
+
+    background: #eee;
+
+    position: relative;
+    z-index: -1;
+
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+}
+
+.computer-stand-bottom{
+    margin: 0 auto;
+
+    width: 33%;
+    height: 5%;
+
+    background: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.iphone{
+    width: 100px;
+    height: 200px;
+
+    background: #dbdbdb;
+    border: 2px solid #999;
+    border-radius: 12px;
+
+    position: relative;
+    transform: translate(0, -92%);
+}
+
+.highlight{
+    width: 97.7%;
+    height: 98.8%;
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+    
+    position: relative;
+    top: -5.9%;
+}
+
+.circle{
+    width: 4%;
+    height: 2%;
+    
+    background: #000;
+    border-radius: 50%;
+    
+    position: relative;
+    top: 4%;
+    left: 45%;
+}
+
+.camera{
+    width: 5%;
+    height: 2.5%;
+
+    background-color: #000;
+    border-radius: 50%;
+
+    position: relative;
+    top: 7%;
+    left: 20%;
+}
+
+.speaker{
+    width: 26%;
+    height: 1.5%;
+
+    background: #000;
+    border-radius: 5px;
+
+    position: relative;
+    top: 4.5%;
+    left: 35%;
+}
+
+.screen{
+   width: 90%;
+   height: 71%;
+
+   border: 1px solid #000;
+   border-radius: 1px;
+
+   position: relative;
+   top: -90%;
+   left: 4%;
+}
+
+.home1{
+    width: 16%;
+    height: 8%;
+
+    background: #fff;
+    border-radius: 50%;
+
+    position: relative;
+    top: -88%;
+    left: 40%;
+    z-index: 2;
+}
+
+.home2{
+    width: 17.6%;
+    height: 8.9%;
+   
+    border-radius: 50%;
+    background: #7f8282;
+    background: -webkit-linear-gradient(#e7e7e7, #7f8282);
+
+    position: relative;
+    top: -96.5%;
+    left: 39.1%;
+}
+
+.projectIMG{
+    width: 100%;
+    height: 100%;
+}
 
 .ProjectImg{ 
     width: 400px;
@@ -238,26 +401,60 @@ h4{
     box-shadow: 3px 3px 6px var(--cor6);
 }
 
+.showMore{
+    display: block;
+    width: 200px;
+    height: 70px;
+
+    margin: auto;
+
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px #fff;
+}
+
+.showMore:hover{
+    transition: transform 0.5s;
+
+    color: #0f0;
+
+    background: #000;
+
+    transform: translate(-5%, -5%);
+}
+
 section{ 
     margin: auto;
 }
 
 footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+    margin-top: 10px;
     padding: 10px;
 
     font-size: 1em;
     font-weight: bold;
     color: #fff;
 
-    background-color: var(--cor6);
-    background-image: var(--cor7);
+    background-color: #000;
 }
-
+.links{
+    margin: 2px 0;
+}
 a{
     text-decoration: none;
-    color: var(--cor8);
+    color: #0f0;
 }
 
 a:hover{
-    color: var(--cor2);
+    color: #ff0;
 }
