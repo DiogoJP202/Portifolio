@@ -43,10 +43,12 @@ h1{
 }
 
 #apresentacao{
-    margin: auto;
-    width: 400px;
+    max-width: 400px;
 
     color: #FFF;
+
+    background-color: transparent;
+
 }
 
 #apresentacao > strong {
@@ -57,9 +59,22 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     font-size: 1em; 
     text-align: center;
+}
+
+.divProfileImg{
+    display: flex !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+    align-items: center;
+
+    width: 98%;
+
+    margin-top: 30px;
+
+    position: absolute;
 }
 
 .ProfileImg{
@@ -158,7 +173,8 @@ canvas{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
- 
+    flex-wrap: wrap;
+
     margin: 5px;
 
     border: 2px solid #000;
@@ -193,8 +209,9 @@ li{
 
 h3{
     max-width: 300px;
+    width: auto;
 
-    margin: 30px auto ;
+    margin: 30px auto;
     padding: 3px;
 
     text-align: center;
@@ -212,13 +229,12 @@ h3{
     justify-content: space-around;
 }
 .projeto{
-    min-width: 300px;
-    max-width: 350px;
-    width: 380px;
+    min-width: 350px;
+    max-width: 500px;
+    width: auto;
     height: 380px;
 }
 .computer{
-    min-width: 300px;
     max-width: 350px;
     width: auto;
     height: 350px;
@@ -387,21 +403,21 @@ h3{
 h4{
     display: block;
     width: 70%;
-
-    margin: 20px auto;
+    
+    margin: 20px auto ;
     padding: 3px;
-
+    
     text-align: center;
     font-size: 1em;
     color: #fff;
-
+    
     background-color: #000;
-    border: 2px solid var(--cor5);
-    border-radius: 10px 0px 10px 0px;
-    box-shadow: 3px 3px 6px var(--cor6);
+    border: 2px outset #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px #000;
 }
 
-.showMore{
+.showMore, .showMore1{
     display: block;
     width: 200px;
     height: 70px;
@@ -417,7 +433,7 @@ h4{
     box-shadow: 1px 1px 3px #fff;
 }
 
-.showMore:hover{
+.showMore:hover, .showMore1:hover{
     transition: transform 0.5s;
 
     color: #0f0;

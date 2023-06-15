@@ -4,9 +4,8 @@
 @media screen and (min-width: 768px){
 
     .divProfileImg{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-top: 70px;
+
         position: absolute;
         left: 1vw;
     }

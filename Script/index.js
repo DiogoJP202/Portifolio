@@ -3,7 +3,7 @@ function matrixRain() {
     const ctx = c.getContext('2d');
     const screen = document.getElementsByTagName('body')[0];
 
-    c.height = 235;
+    c.height = 380;
     c.width = screen.offsetWidth;
 
     const letters = ["日","ﾊ","ﾐ","ﾋ","ｰ","ｳ","ｼ","ﾅ","ﾓ","ﾆ","ｻ","ﾜ","ﾂ","ｵ","ﾘ","ｱ","ﾎ","ﾃ","ﾏ","ｹ","ﾒ","ｴ","ｶ","ｷ","ﾑ","ﾕ","ﾗ","ｾ","ﾈ","ｽ","ﾀ","ﾇ","ﾍ",":","・",".","=","*","+","-","<",">","¦","｜","ﾘ"];
@@ -82,6 +82,7 @@ function hands(){
 
 function showMore(){
     let contador = 1;
+    let contador1 = 1;
 
     document.addEventListener('click', event => {
         element = event.target;
@@ -93,6 +94,15 @@ function showMore(){
             projects[contador].style.display = 'block';
 
             if(contador > 3) element.style.display = 'none';
+        }
+
+        if(element.classList.contains('showMore1')){
+            const projects = document.querySelectorAll('.Project1');
+
+            contador1 ++;
+            projects[contador1].style.display = 'block';
+
+            if(contador1 > 12) element.style.display = 'none';
         }
     })
 }
