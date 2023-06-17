@@ -35,9 +35,7 @@ class animation{
             window.requestAnimationFrame(draw);
         }
 
-        window.addEventListener('resize', () => {
-            this.matrixRain();
-        });
+        window.addEventListener('resize', () => this.matrixRain());
 
         draw();
     }
