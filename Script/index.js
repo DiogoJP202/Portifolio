@@ -1,4 +1,8 @@
 class animation{
+    constructor(){
+        this.contador = 0;
+    }
+
     matrixRain(){
         const c = document.getElementById('matrix');
         const ctx = c.getContext('2d');
@@ -10,8 +14,8 @@ class animation{
 
         const letters = ["日","ﾊ","ﾐ","ﾋ","ｰ","ｳ","ｼ","ﾅ","ﾓ","ﾆ","ｻ","ﾜ","ﾂ","ｵ","ﾘ","ｱ","ﾎ","ﾃ","ﾏ","ｹ","ﾒ","ｴ","ｶ","ｷ","ﾑ","ﾕ","ﾗ","ｾ","ﾈ","ｽ","ﾀ","ﾇ","ﾍ",":","・",".","=","*","+","-","<",">","¦","｜","ﾘ"];
         const fontSize = 18;
-        const columns = c.width / fontSize;
-        const drops = new Array(Math.floor(columns)).fill(1);
+        let columns = c.width / fontSize;
+        let drops = new Array(Math.floor(columns)).fill(1);
         
         function draw(){
             ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
@@ -28,11 +32,10 @@ class animation{
                     drops[i] = 0;
                 }
             }
-            requestAnimationFrame(draw);
+            window.requestAnimationFrame(draw);
         }
 
         window.addEventListener('resize', () => {
-            clearRect(0, 0, ctx.width, ctx.height);
             this.matrixRain();
         });
 
