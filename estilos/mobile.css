@@ -143,9 +143,10 @@ canvas{
     font-size: 1.5em;
     color: #fff;
 
+    border: 1px outset #fff;
     background-color: #000;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px var(--cor6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000;
 }
 
 #sk1, #sk2{
@@ -218,9 +219,10 @@ h3{
     font-size: 1.5em;
     color: #fff;
 
+    border: 1px outset #fff;
     border-radius: 3px;
     background-color: #000;
-    box-shadow: 3px 3px 6px var(--cor6);
+    box-shadow: 3px 3px 6px #000;
 }
 
 .HTML_CSS, .JavaScript{
@@ -419,26 +421,27 @@ h4{
 
 .showMore, .showMore1{
     display: block;
-    width: 200px;
-    height: 70px;
+    width: 150px;
+    height: 60px;
 
-    margin: auto;
+    margin: 30px auto;
 
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
-    color: #000;
+    color: #0f0;
 
-    background: #fff;
-    border-radius: 20px;
+    background: #000;
+    border-radius: 5px;
     box-shadow: 1px 1px 3px #fff;
 }
 
 .showMore:hover, .showMore1:hover{
     transition: transform 0.5s;
 
-    color: #0f0;
+    color: #000;
 
-    background: #000;
+    background: #fff;
+    box-shadow: 1px 1px 3px #000;
 
     transform: translate(-5%, -5%);
 }
