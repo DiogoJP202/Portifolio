@@ -105,14 +105,29 @@ h1{
     background-color: #000;
 }
 
+.DLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 25px;
+}
+
+.linkR{
+    padding: 10px 0px;
+
+    transition: 1.9s;
+}
+
 .linkR > a{
+    text-shadow: 2px 2px 5px #0F0;
     color: #0F0;
 }
 
 .linkR > a:hover{
-    transition-duration: 3s;
-    transition: .5s;
+    transition-duration: .5s;
 
+    text-shadow: 2px 2px 5px #fff;
     color: #FFF;
     font-size: 1.3em;
 }
