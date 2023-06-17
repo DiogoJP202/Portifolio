@@ -140,7 +140,6 @@ h1{
 }
 
 .hand{
-    transition-duration: .5s;
     transition: .5s;
 }
 
@@ -245,12 +244,14 @@ h3{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .projeto{
     min-width: 350px;
     max-width: 500px;
     width: auto;
     height: 380px;
 }
+
 .computer{
     max-width: 350px;
     width: auto;
@@ -448,11 +449,11 @@ h4{
     background: #000;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #fff;
+
+    transition: transform 1s;
 }
 
 .showMore:hover, .showMore1:hover{
-    transition: transform 0.5s;
-
     color: #000;
 
     background: #fff;
@@ -481,9 +482,11 @@ footer{
 
     background-color: #000;
 }
+
 .links{
     margin: 2px 0;
 }
+
 a{
     text-decoration: none;
     color: #0f0;

@@ -75,11 +75,7 @@ class animation{
         }
     
         setInterval(()=>{
-            if(contador % 2 === 0){
-                handLeft();
-            } else {
-                handright();
-            }
+            contador % 2 === 0 ?handLeft() :handright();
             contador ++;
         }, 300)
     }
@@ -125,11 +121,7 @@ class animation{
         }
 
         setInterval(()=>{
-            if(contador % 2 === 0){
-                left();
-            } else {
-                right();
-            }
+            contador % 2 === 0 ?left() :right();
             contador ++;
         }, 2000)
     }
