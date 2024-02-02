@@ -8,7 +8,7 @@ class animation{
         const ctx = c.getContext('2d');
         const screen = document.querySelector('body');
     
-        c.height = 380;
+        c.height = 450;
         c.width = screen.offsetWidth; // Get Element Width;
         // Is like window.innerWidth;
 

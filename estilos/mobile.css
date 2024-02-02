@@ -90,6 +90,66 @@ h1{
     background-image: var(--cor3);
 }
 
+#ShelbyInACube{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 100px;
+}
+
+.container{
+    margin: 16px 0;
+
+    perspective: 1000px;
+    perspective-origin: 100% 100%;
+}
+
+.cube{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    animation: rotate 6s linear infinite;
+}
+
+.cube > div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border: #000 solid 1px;
+}
+
+.s1{
+    transform: translateZ(25px);
+}
+
+.s2{
+    transform: rotateY(90deg) translateZ(25px);
+}
+
+.s3{
+    transform: rotateY(180deg) translateZ(25px);
+}
+
+.s4{
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.s5{
+    transform: rotateY(-90deg) translateZ(25px);
+}
+
+.s6{
+    transform: rotateX(-90deg) translateZ(25px) rotateY(180deg);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
 #shelby{
     width: 50px;
 }
